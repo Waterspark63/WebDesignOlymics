@@ -1,20 +1,5 @@
 body {background-color: powderblue;}
-img {float:left;}
 #HelloWorld {text-align: center;}
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 20%;
-  padding: 20px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: block;
-}
 
 /* Add a black background color to the top navigation */
 .topnav {background-color: #333;overflow: hidden;}
@@ -47,6 +32,10 @@ img {float:left;}
 .dropdown .dropbtn {font-size: 16px;border: none;outline: none;
     color: white;padding: 14px 16px;background-color: inherit;
     font-family: inherit;margin: 0;}
+
+.hiddenbutton {font-size: 16px;border: none;outline: none;
+        color: white;padding: 14px 16px;background-color: skyblue;color:blue;
+        font-family: Arial, Helvetica, sans-serif;;margin: 0;}
 
 .navbar a:hover, .dropdown:hover .dropbtn {background-color: grey;}
 
