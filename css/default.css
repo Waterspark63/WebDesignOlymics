@@ -1,5 +1,6 @@
 body {background-color: powderblue;}
 #HelloWorld {text-align: center;}
+.hiddenplug {background: transparent;border: none !important;font-size:2px;height:2px;}
 
 /* Add a black background color to the top navigation */
 .topnav {background-color: #333;overflow: hidden;}

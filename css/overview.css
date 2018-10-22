@@ -2,6 +2,10 @@ body {background-color: powderblue;}
 img {float:left;}
 #HelloWorld {text-align: center;}
 
+.hiddenbutton {font-size: 16px;border: none;outline: none;
+    color: blue;padding: 14px 16px;background-color: inherit;
+    font-family: inherit;margin: 0;}
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
