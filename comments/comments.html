@@ -1,0 +1,58 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="../css/overview.css">
+  <meta charset="utf-8">
+  <style>
+    .formDiv {
+      margin: auto;
+            /* Up  Right Down Left*/
+      padding: 10px 0px 0px 10px;
+      width: 25%;
+      border: 1px solid rgba(255, 255, 255, .5);
+    }
+  </style>
+  <title>Weird Animals - Comments</title>
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="topnav" id="TopNav">
+    <a href="index.html" class="active">Home</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Animals
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- ANIMALS LOCATED AT "./images/strange animal #.jpeg" -->
+      <div class="dropdown-content">
+        <a href="animals/overview.html">Overview of Animals</a>
+        <a href="animals/animal1.html">Animal 1</a>
+        <a href="animals/animal2.html">Animal 2</a>
+        <a href="animals/animal3.html">Animal 3</a>
+        <a href="animals/animal4.html">Animal 4</a>
+        <a href="animals/animal5.html">Animal 5</a>
+        <a href="animals/animal6.html">Animal 6</a>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="formDiv">
+    <form id="form">
+        Name:
+        <input id="item" type="text" placeholder="New" required>
+        <br>
+        Comment:
+        <input id="comment" type="text" placeholder="New" required>
+        <input id="button2" type="submit" value="submit" onclick="startReload();">
+    </form>
+
+    <ul id="ul" style="list-style-type:none;" ></ul>
+    <button id="button" onclick="clearAll();">Clear All</button>
+    
+  </div>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>
