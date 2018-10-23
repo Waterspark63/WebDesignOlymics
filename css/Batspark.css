@@ -37,6 +37,21 @@ body {background-color: powderblue;}
         color: white;padding: 14px 16px;background-color: skyblue;color:blue;
         font-family: Arial, Helvetica, sans-serif;;margin: 0;}
 
+.tooltip {position: relative;display: inline-block;
+        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */}
+
+/* Tooltip text */
+.tooltip .tooltiptext {visibility: hidden;
+    width: 120px;background-color: black;
+    color: #fff;text-align: center;
+    padding: 5px 0;border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;z-index: 1;}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {visibility: visible;}
+
 .navbar a:hover, .dropdown:hover .dropbtn {background-color: grey;}
 
 .dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;

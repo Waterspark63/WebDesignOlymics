@@ -1,21 +1,21 @@
 <html lang="en" dir="ltr">
-<head>
-  <link rel="stylesheet" href="./css/default.css">
-  <meta charset="utf-8">
 
-  <title>Weird Animals - Home</title>
+<head>
+  <link rel="stylesheet" href="../css/overview.css">
+  <meta charset="utf-8">
+  <style>
+    .formDiv {
+      margin: auto;
+            /* Up  Right Down Left*/
+      padding: 10px 0px 0px 10px;
+      width: 25%;
+      border: 1px solid rgba(255, 255, 255, .5);
+    }
+  </style>
+  <title>Weird Animals - Comments</title>
 </head>
 
 <body>
-
-  <audio autoplay>
-    <source src="sounds/tmp.ogg" type="audio/ogg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <button class="hiddenplug"><a href="animals/Batspark.html">Hi</a></button>
-
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <div class="topnav" id="TopNav">
     <a href="index.html" class="active">Home</a>
@@ -35,20 +35,24 @@
         <a href="animals/animal6.html">Animal 6</a>
       </div>
     </div>
-
   </div>
-<button class="hiddenplug"><a href="authors.html">Hi</a></button>
-  <h1> Home Page! </h1>
 
-  <audio controls>
-    <source src="sounds/tmp2.ogg" type="audio/ogg">
-    Your browser does not support the audio element.
-  </audio>
+  <br><br>
+  <div class="formDiv">
+    <form id="form">
+        Name:
+        <input id="item" type="text" placeholder="New" required>
+        <br>
+        Comment:
+        <input id="comment" type="text" placeholder="New" required>
+        <input id="button2" type="submit" value="submit" onclick="startReload();">
+    </form>
 
-  <p>
-    This is our website for the <i><b>Web Design 1 Olympics!</i></b><br>
-    Our topic is about 6 weird animals found in the world. Each page will have information about each animal, and more images.<br>
-    There is also a <a href="animals/overview.html">Overview</a> page for a overview look at all the animals presented on this site.<br>
-  </p>
+    <ul id="ul" style="list-style-type:none;" ></ul>
+    <button id="button" onclick="clearAll();">Clear All</button>
+    
+  </div>
+
+  <script src="./scripts.js"></script>
 </body>
 </html>
